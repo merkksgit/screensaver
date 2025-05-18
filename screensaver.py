@@ -61,13 +61,13 @@ class BouncingScreensaver:
         self.image_width = self.image.get_width()
         self.image_height = self.image.get_height()
         # Scale the image if it's too large
-        # max_size = min(self.width, self.height) // 4
-        # if self.image_width > max_size or self.image_height > max_size:
-        #     scale = max_size / max(self.image_width, self.image_height)
-        #     new_width = int(self.image_width * scale)
-        #     new_height = int(self.image_height * scale)
-        #     self.image = pygame.transform.scale(self.image, (new_width, new_height))
-        #     self.image_width, self.image_height = new_width, new_height
+        max_size = min(self.width, self.height) // 4
+        if self.image_width > max_size or self.image_height > max_size:
+            scale = max_size / max(self.image_width, self.image_height)
+            new_width = int(self.image_width * scale)
+            new_height = int(self.image_height * scale)
+            self.image = pygame.transform.scale(self.image, (new_width, new_height))
+            self.image_width, self.image_height = new_width, new_height
 
     def update_position(self):
         """

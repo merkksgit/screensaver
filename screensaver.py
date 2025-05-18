@@ -19,7 +19,7 @@ class BouncingScreensaver:
 
     def __init__(self):
         # Path to your image file
-        self.image_path = "/home/merkks/projects/screensaver/images/logo-text-link.png"
+        self.image_path = "/home/user/path/to/imagefile"
         # Check if image exists before initializing pygame
         if not os.path.exists(self.image_path):
             print("Error: Image file not found!")

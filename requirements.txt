@@ -1,0 +1,4 @@
+# requirements.txt
+pygame==2.5.2
+numpy==1.26.0
+pillow==10.1.0
